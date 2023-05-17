@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<main>
+  <div class="container" id="calculator">
+   <div class="form">
+     <div class="form-group">
+       <label for="day">day</label>
+       <input required type="number" style="font-weight: 400; font-size: 30px;" placeholder="DD" id="day" name="day" class="form-control shadow-none">
+        <div class="error">day</div>
+     </div>
+       <div class="form-group">
+         <label for="year">month</label>
+         <input required type="number" style="font-weight: 400; font-size: 30px;" placeholder="MM" id="month" name="month" class="form-control shadow-none">
+         <div class="error">month</div>
+        </div>
+       <div class="form-group">
+       <label for="year">year</label>
+       <input required type="number" style="font-weight: 400; font-size: 30px;" placeholder="YYYY" id="year" name="year" class="form-control shadow-none">
+        <div class="error">year</div>
+        <div class="botton">
+        <div class="linea"></div>
+              <div class="button-img rounded-circle" onclick="calculator()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+              </div>
+        </div>
+     </div> 
+   </div>
+   <div class="results">
+    <div class="year">
+     <p><span id="yearTotal">--</span> years</p> 
+    </div>
+    <div class="month">
+      <p><span id="monthTotal">--</span> months</p>
+    </div>
+    <div class="day">
+      <p><span id="dayTotal">--</span> days</p>
+    </div>
+  </div>
+  </div>
+</main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/SamuelWorld20">Samuel Ejalonibu</a>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
